@@ -1,5 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:root{
+    --primer-color: black;
+    --segundo-color: white;
+    --tercer-color: #fbc827;
+    /*Tipografia*/
+    --tipografia-principal:"Montserrat", sans-serif;
+}
+.logo{
+    width: 175px;
+    margin-left: 30px;
+}
+.navbar{
+    background-color: var(--primer-color);
+    font-family: var(--tipografia-principal);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.color{
+    background-color: var(--tercer-color);
+    margin: solid;
 }
