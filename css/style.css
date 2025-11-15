@@ -25,3 +25,9 @@
     background-color: var(--tercer-color);
     margin: solid;
 }
+
+.img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
