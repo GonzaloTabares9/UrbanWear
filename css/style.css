@@ -69,3 +69,16 @@
 .lineas:hover{
     color: var(--segundo-color);
 }
+.lineas::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--segundo-color);
+    transition: width 0.3s ease;
+}
+.lineas:hover::after{
+    width: 100%;
+}
