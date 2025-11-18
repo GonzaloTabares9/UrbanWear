@@ -57,6 +57,42 @@
     height: 410px;
     object-fit: cover;
 }
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 0.5em;
+    width: calc(100%/5);
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 4px 8px 10px 0 rgba(22, 22, 26, 0.18);
+}
+
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.carousel-control-prev , .carousel-control-next {
+    background-color: black;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 .footer{
     background-color: var(--primer-color);
 }
