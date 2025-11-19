@@ -57,14 +57,10 @@
     height: 410px;
     object-fit: cover;
 }
-.cards-wrapper{
-    display: flex;
-    justify-content: center;
-}
+
 
 .card {
     margin: 0.5em;
-    width: calc(100%/5);
     border: 1px solid #ccc;
     border-radius: 15px;
     box-shadow: 4px 8px 10px 0 rgba(22, 22, 26, 0.18);
@@ -118,3 +114,12 @@
 .lineas:hover::after{
     width: 100%;
 }
+
+/* @media all and (max-width: 768px) {
+    .img {
+        height: 300px;
+    }
+    .marcas {
+        height: 250px;
+    }
+} */
