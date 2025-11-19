@@ -1,27 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
     --primer-color: black;
     --segundo-color: white;
     --tercer-color: #fbc827;
     /*Tipografia*/
-    --tipografia-principal:"Montserrat", sans-serif;
+    --tipografia-principal: "Montserrat", sans-serif;
 }
-.logo{
+
+.logo {
     width: 175px;
     margin-left: 30px;
 }
-.navbar{
+
+.navbar {
     background-color: var(--primer-color);
     font-family: var(--tipografia-principal);
     font-weight: 500;
     font-size: 0.9rem;
 }
-.color{
+
+.color {
     background-color: var(--tercer-color);
     margin: solid;
 }
@@ -31,23 +40,27 @@
     height: 450px;
     object-fit: cover;
 }
-.cardPrincipal{
+
+.cardPrincipal {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.cardOverlay{
+
+.cardOverlay {
     background: -moz-linear-gradient();
     transform: scale(1);
     transition: all 0.3s ease;
 }
+
 .cardPrincipal:hover .cardOverlay {
-  transform: scale(1);
+    transform: scale(1);
 }
+
 .cardPrincipal:hover img {
-  transform: scale(1.05);
-  transition: 2.0s ease;
+    transform: scale(1.05);
+    transition: 2.0s ease;
 }
 
 .marcas {
@@ -55,14 +68,10 @@
     height: 410px;
     object-fit: cover;
 }
-.cards-wrapper{
-    display: flex;
-    justify-content: center;
-}
+
 
 .card {
     margin: 0.5em;
-    width: calc(100%/5);
     border: 1px solid #ccc;
     border-radius: 15px;
     box-shadow: 4px 8px 10px 0 rgba(22, 22, 26, 0.18);
@@ -75,7 +84,8 @@
     object-fit: cover;
 }
 
-.carousel-control-prev , .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     background-color: black;
     width: 6vh;
     height: 6vh;
@@ -91,19 +101,32 @@
     transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.footer{
+
+.section-img-hover {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.section-img-hover:hover {
+    transform: scale(1.05);
+}
+
+.footer {
     background-color: var(--primer-color);
 }
-.lineas{
+
+.lineas {
     position: relative;
     color: var(--segundo-color);
     padding-bottom: 2px;
     transition: all 0.3s ease;
 }
-.lineas:hover{
+
+.lineas:hover {
     color: var(--segundo-color);
 }
-.lineas::after{
+
+.lineas::after {
     content: '';
     position: absolute;
     width: 0;
@@ -113,6 +136,7 @@
     background-color: var(--segundo-color);
     transition: width 0.3s ease;
 }
-.lineas:hover::after{
+
+.lineas:hover::after {
     width: 100%;
 }
