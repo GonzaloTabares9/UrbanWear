@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 :root{
     --primer-color: black;
     --segundo-color: white;
@@ -55,14 +58,10 @@
     height: 410px;
     object-fit: cover;
 }
-.cards-wrapper{
-    display: flex;
-    justify-content: center;
-}
+
 
 .card {
     margin: 0.5em;
-    width: calc(100%/5);
     border: 1px solid #ccc;
     border-radius: 15px;
     box-shadow: 4px 8px 10px 0 rgba(22, 22, 26, 0.18);
@@ -91,6 +90,16 @@
     transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.section-img-hover {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.section-img-hover:hover {
+    transform: scale(1.05);
+}
+
 .footer{
     background-color: var(--primer-color);
 }
