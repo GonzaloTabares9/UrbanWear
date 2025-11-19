@@ -92,6 +92,14 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.section-img-hover {
+    transition: transform 0.3s ease;
+}
+
+.section-img-hover:hover {
+    transform: scale(1.05);
+}
+
 .footer{
     background-color: var(--primer-color);
 }
