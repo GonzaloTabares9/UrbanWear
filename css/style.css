@@ -39,12 +39,10 @@
 }
 .cardOverlay{
     background: -moz-linear-gradient();
-    opacity: 1;
     transform: scale(1);
     transition: all 0.3s ease;
 }
 .cardPrincipal:hover .cardOverlay {
-  opacity: 0;
   transform: scale(1);
 }
 .cardPrincipal:hover img {
