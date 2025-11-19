@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden;
+}
+
 :root{
     --primer-color: black;
     --segundo-color: white;
@@ -89,6 +93,7 @@
     transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .footer{
     background-color: var(--primer-color);
 }
