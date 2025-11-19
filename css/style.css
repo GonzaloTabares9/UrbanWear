@@ -114,12 +114,3 @@
 .lineas:hover::after{
     width: 100%;
 }
-
-/* @media all and (max-width: 768px) {
-    .img {
-        height: 300px;
-    }
-    .marcas {
-        height: 250px;
-    }
-} */
