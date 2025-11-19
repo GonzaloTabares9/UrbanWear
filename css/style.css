@@ -99,6 +99,7 @@ body {
 .section-img-hover:hover {
     transform: scale(1.05);
 }
+
 .footer{
     background-color: var(--primer-color);
 }
