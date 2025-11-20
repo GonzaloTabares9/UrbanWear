@@ -250,4 +250,10 @@ body {
     text-shadow: 0 0 12px #fbc827;
     transform: scale(1.03);
 }
+.contacto{
+    font-family: var(--tipografia-principal);
+}
+.form-contacto{
+    font-family: var(--tipografia-principal);
+}
 
