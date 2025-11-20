@@ -214,3 +214,40 @@ body {
     color: var(--tercer-color);
 }
 
+.error-container {
+    max-width: 600px;
+}
+
+.error-logo {
+    width: 180px;
+    transition: 0.3s ease;
+}
+
+.error-logo:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 10px #fbc827);
+}
+
+
+.error-code {
+    font-size: 8rem;
+    transition: 0.3s ease;
+}
+
+.error-code:hover {
+    color: #fbc827;
+    text-shadow: 0 0 15px #fbc827;
+    transform: scale(1.05);
+}
+
+.error-title, .error-container p {
+    transition: 0.3s ease;
+}
+
+.error-title:hover,
+.error-container p:hover {
+    color: #fbc827;
+    text-shadow: 0 0 12px #fbc827;
+    transform: scale(1.03);
+}
+
