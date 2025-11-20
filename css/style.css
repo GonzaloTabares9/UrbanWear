@@ -17,6 +17,10 @@ body {
     /*Tipografia*/
     --tipografia-principal: "Montserrat", sans-serif;
 }
+.titulos {
+    font-size: var(--tipografia-principal);
+    font-size: 40px;
+}
 
 .logo {
     width: 175px;
