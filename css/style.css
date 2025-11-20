@@ -251,6 +251,6 @@ body {
     transform: scale(1.03);
 }
 .contacto{
-    
+    font-family: var(--tipografia-principal);
 }
 
