@@ -164,6 +164,16 @@ body {
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
+
+.texto-zoom {
+    transition: transform 0.2s ease-in-out;
+}
+
+.texto-zoom:hover {
+    transform: scale(1.2);
+}
+
 .carrito{
     color: var(--tercer-color);
 }
+
