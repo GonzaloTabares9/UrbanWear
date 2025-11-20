@@ -1,16 +1,3151 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ecommerce de ropa urbana y deportiva de marca">
-    <meta name="keywords" content="Indumentaria , calzado , accesorios , moda , estilo , marcas">
-    <meta name="author" content="Blanca Leandro , Tabares Gonzalo">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ecommerce de ropa urbana y deportiva de marca"
+    />
+    <meta
+      name="keywords"
+      content="Indumentaria , calzado , accesorios , moda , estilo , marcas"
+    />
+    <meta name="author" content="Blanca Leandro , Tabares Gonzalo" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="shortcut icon" href="/assets/img/Imagen de WhatsApp 2025-11-13 a las 21.02.36_c6234f75.png" type="image/x-icon">
     <title>UrbanWear</title>
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+  </head>
+
+  <body>
+    <header>
+      <div class="color">
+        <br />
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="index.html">
+            <img
+              src="assets/img/Imagen de WhatsApp 2025-11-13 a las 21.02.36_c6234f75.png"
+              alt="logo"
+              class="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="text-white text-decoration-none active mx-2"
+                  aria-current="page"
+                  href="./index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-white text-decoration-none mx-2"
+                  href="pages/nosotros.html"
+                  >NOSOTROS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-white text-decoration-none mx-2"
+                  href="pages/contacto.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="text-white text-decoration-none dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/pages/marcas/nike.html"
+                      >NIKE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/marcas/adidas.html"
+                      >ADIDAS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/marcas/puma.html"
+                      >PUMA</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/pages/marcas/jordan.html
+                  "
+                      >JORDAN</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="mx-4">
+              <form action="buscar" class="text-center">
+                <input type="search" placeholder="buscar" class="text-center" />
+                <button
+                  class="btn"
+                  style="
+                    height: 29px;
+                    width: 29px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i class="bi bi-search text-white"></i>
+                </button>
+                <a
+                  href="pages/login.html"
+                  class="btn"
+                  style="
+                    height: 29px;
+                    width: 29px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i class="bi bi-person-circle text-white"></i>
+                </a>
+                <a
+                  href="pages/carrito.html"
+                  class="btn"
+                  style="
+                    height: 29px;
+                    width: 29px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i class="bi bi-cart2 text-white"></i>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/assets/img/CarrouselNike.png"
+                class="img"
+                alt="Carrusel Nike"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/CarrouselAdidas2.png"
+                class="img"
+                alt="Carrusel Adidas"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/CarrouselAdidas.png"
+                class="img"
+                alt="Carrusel Puma"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/CarrouselJordan.png"
+                class="img"
+                alt="Carrusel Jordan"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="bg-light">
+          <br />
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/assets/img/banner1.png"
+                class="d-block w-100"
+                alt="Banner Bancos"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/banner2.png"
+                class="d-block w-100"
+                alt="Banner NaranjaX"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="container-fluid py-4 pb-5 my-5">
+        <h2 class="text-center mb-5 titulos">
+          LAS TENDECIAS DE NUESTRAS MARCAS
+          <i class="bi bi-fire text-warning"></i>
+        </h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <a href="pages/marcas/nike.html" class="text-decoration-none">
+              <div class="cardPrincipal border-0 rounded-3 shadow-sm">
+                <div
+                  class="img-container"
+                  style="height: 450px; overflow: hidden"
+                >
+                  <img
+                    src="assets/img/nikePortada2.jpg"
+                    class="img-top h-100 w-100"
+                    alt="la liga"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-img-overlay mx-2">
+                  <h5 class="text-white">NIKE</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <a href="pages/marcas/adidas.html" class="text-decoration-none">
+              <div class="cardPrincipal border-0 rounded-3 shadow-sm">
+                <div
+                  class="img-container"
+                  style="height: 450px; overflow: hidden"
+                >
+                  <img
+                    src="assets/img/adiportada6.jpg"
+                    class="img-top h-100 w-100"
+                    alt="la liga"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-img-overlay mx-2">
+                  <h5 class="text-white">ADIDAS</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <a href="pages/marcas/puma.html" class="d-block h-100">
+              <div class="cardPrincipal border-0 rounded-3 shadow-sm">
+                <div
+                  class="img-container"
+                  style="height: 450px; overflow: hidden"
+                >
+                  <img
+                    src="assets/img/pumaPortada.jpeg"
+                    class="img-top h-100 w-100"
+                    alt="la liga"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-img-overlay mx-2">
+                  <h5 class="text-white">PUMA</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <a href="pages/marcas/jordan.html" class="d-block h-100">
+              <div class="cardPrincipal border-0 rounded-3 shadow-sm">
+                <div
+                  class="img-container"
+                  style="height: 450px; overflow: hidden"
+                >
+                  <img
+                    src="assets/img/jordanPortada3.jpg"
+                    class="img-top h-100 w-100"
+                    alt="la liga"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-img-overlay mx-2">
+                  <h5 class="text-white">JORDAN</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="d-flex justify-content-center titulos">
+          LOS PRODUCTOS MAS BUSCADOS
+        </h2>
+        <div id="carouselExample" class="carousel carousel-light slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-3 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Nike/AirMaxPlus.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body d-flex flex-column">
+                      <p class="card-text">
+                        <b>ZAPATILLAS NIKE AIR MAX PLUS HOMBRE</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$399.999</b></h5>
+                      <p>6 cuotas de $66.666</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto1"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Adidas/AdidasJuventus.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body d-flex flex-column">
+                      <p class="card-text">
+                        <b>CAMPERA JUVENTUS ESSENTIALS HOMBRE</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$179.999</b></h5>
+                      <p>6 cuotas de $29.999</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto2"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Puma/BuzoPuma.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body d-flex flex-column">
+                      <p class="card-text"><b>BUZO PUMA OLD CREAM HOMBRE</b></p>
+                      <hr />
+                      <h5 class="card-title"><b>$119.999</b></h5>
+                      <p>6 cuotas de $19.999</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto3"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Nike/total90grid.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body d-flex flex-column">
+                      <p class="card-text">
+                        <b>ZAPATILLAS NIKE SPORTWERAS TOTAL 90</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$259.999</b></h5>
+                      <p>6 cuotas de $43.333</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto4"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Nike/MusculosaNBAGrid.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body d-flex flex-column">
+                      <p class="card-text">
+                        <b>MUSCULOSA NBA MINNESOTA TIMBERWOLVES JUGADOR</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$139.999</b></h5>
+                      <p>6 cuotas de $23.333</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto5"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-3 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Adidas/BolsoAdidas.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>BOLSO ADIDAS ESSENTIALS CREAM</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$49.999</b></h5>
+                      <p>3 cuotas de $16.666</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto6"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Nike/PantalonNikeMujerGrid.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>PANTALON JORDAN UNISEX</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$129.999</b></h5>
+                      <p>6 cuotas de $21.666</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto7"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Jordan/MochilaJordan.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>MOCHILA AIR JORDAN ESSENTIALS</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$149.999</b></h5>
+                      <p>6 cuotas de $24.999</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto8"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Adidas/PilusoAdidas.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>PILUSO ADIDAS ORIGINALS ESSENTIALS</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$39.999</b></h5>
+                      <p>3 cuotas de $13.333</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto9"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Adidas/PantalonAdidas.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>PANTALÓN ADIDAS SPORTS LINE GREEN</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$89.999</b></h5>
+                      <p>6 cuotas de $15.000</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto10"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-3 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Puma/RiñoneraPuma.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>RIÑONERA PUMA ESSENTIALS PURPLE</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$49.999</b></h5>
+                      <p>3 cuotas de $16.666</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto11"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Nike/PantalonNikeMujerGrid.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>PANTALON NIKE SWOOSH NIKE MUJER</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$149.999</b></h5>
+                      <p>6 cuotas de $24.999</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto7"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Adidas/BuzoAdidas.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>BUZO ADIDAS BLACK AND WHITE</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$114.000</b></h5>
+                      <p>6 cuotas de $19.000</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto13"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets//Puma/CamperaPumaMujer.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>CAMPERA PUMA ESSENTIALS WOMENS</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$139.999</b></h5>
+                      <p>6 cuotas de $23.333</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto14"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+                  <div class="card hover-card">
+                    <div class="img-wrapper">
+                      <img
+                        src="/assets/Jordan/AllStarTeam.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                    <hr />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b>MUSCULOSA NBA ALL STAR TEAM JORDAN</b>
+                      </p>
+                      <hr />
+                      <h5 class="card-title"><b>$139.999</b></h5>
+                      <p>6 cuotas de $23.333</p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn color w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProducto15"
+                        >
+                          AGREGAR AL CARRITO
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div>
+          <br class="bg-light" />
+        </div>
+      </section>
+      <section class="row py-4 mb-5 color">
+        <div class="col-md-4">
+          <a href="/pages/error404.html">
+            <img
+              src="/assets/img/envioGratis.png"
+              alt="Envío Gratis"
+              class="w-100 section-img-hover"
+            />
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="/pages/error404.html">
+            <img
+              src="/assets/img/retiroGratis.png"
+              alt="Retiro Gratis"
+              class="w-100 section-img-hover"
+            />
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="/pages/error404.html">
+            <img
+              src="/assets/img/3CuotasSinInteres.png"
+              alt="3 Cuotas Sin Interés"
+              class="w-100 section-img-hover"
+            />
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2 class="d-flex justify-content-center titulos">APROVECHA EL HOT SALE</h2>
+        <div class="row g-3 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <div class="card hover-card">
+              <div class="img-wrapper">
+                <img
+                  src="/assets/Nike/ZapatillasNikeSale.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <hr />
+              <div class="card-body">
+                <p class="card-text">
+                  <b>ZAPATILLAS NIKE DUNK LOW PRO "SKYPE GOOD"</b>
+                </p>
+                <hr />
+                <h5 class="card-title">
+                  <span class="text-decoration-line-through">$259.999</span>
+                  <b>$199.999</b>
+                </h5>
+                <p>6 cuotas de $33.333</p>
+                <div class="mt-auto">
+                  <button
+                    class="btn color w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalProducto16"
+                  >
+                    AGREGAR AL CARRITO
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <div class="card hover-card">
+              <div class="img-wrapper">
+                <img
+                  src="/assets/Puma/BuzoPumaSale.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <hr />
+              <div class="card-body">
+                <p class="card-text"><b>BUZO PUMA SPORT BROWN HOMBRE</b></p>
+                <hr />
+                <h5 class="card-title">
+                  <span class="text-decoration-line-through">$89.999</span>
+                  <b>$49.999</b>
+                </h5>
+                <p>3 cuotas de $16.666</p>
+                <div class="mt-auto">
+                  <button class="btn color w-100" data-bs-toggle="modal"
+                    data-bs-target="#modalProducto17">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <div class="card hover-card">
+              <div class="img-wrapper">
+                <img
+                  src="/assets/Jordan/AirJordan3Sale.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <hr />
+              <div class="card-body">
+                <p class="card-text">
+                  <b>NIKE AIR JORDAN RETRO 3 "TEX" MUJER</b>
+                </p>
+                <hr />
+                <h5 class="card-title">
+                  <span class="text-decoration-line-through">$399.999</span>
+                  <b>$239.999</b>
+                </h5>
+                <p>6 cuotas de $39.999</p>
+                <div class="mt-auto">
+                  <button class="btn color w-100" data-bs-toggle="modal"
+                    data-bs-target="#modalProducto18">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <div class="card hover-card">
+              <div class="img-wrapper">
+                <img
+                  src="/assets/Nike/PantalonNikeSale.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <hr />
+              <div class="card-body">
+                <p class="card-text">
+                  <b>PANTALON NIKE SPORTWEARS ESSENTIALS MUJER</b>
+                </p>
+                <hr />
+                <h5 class="card-title">
+                  <span class="text-decoration-line-through">$159.999</span>
+                  <b>$109.999</b>
+                </h5>
+                <p>3 cuotas de $36.666</p>
+                <div class="mt-auto">
+                  <button class="btn color w-100" data-bs-toggle="modal"
+                    data-bs-target="#modalProducto19">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <div class="card hover-card">
+              <div class="img-wrapper">
+                <img
+                  src="/assets/Adidas/ZapatillasAdidasSale.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <hr />
+              <div class="card-body">
+                <p class="card-text">
+                  <b>ZAPATILLAS ADIDAS ORIGINALS THREE LINE</b>
+                </p>
+                <hr />
+                <h5 class="card-title">
+                  <span class="text-decoration-line-through">$129.999</span>
+                  <b>$99.999</b>
+                </h5>
+                <p>3 cuotas de $33.333</p>
+                <div class="mt-auto">
+                  <button class="btn color w-100" data-bs-toggle="modal"
+                    data-bs-target="#modalProducto20">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid p-0 m-0">
+        <img
+          src="assets/img/portadaZapas.jpg"
+          alt="img"
+          style="width: 100%; height: 500px; object-fit: cover"
+        />
+      </section>
+    </main>
+    <div
+      class="modal fade"
+      id="modalProducto1"
+      tabindex="-1"
+      aria-labelledby="modalProducto1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Nike/AirMaxPlus.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Zapatillas Nike Air Max PLUS</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Zapatillas diseñadas para máximo confort y rendimiento
+                  deportivo. Tecnología Air de amortiguación.
+                </p>
+
+                <div class="mb-3">
+                  <strong>Características:</strong>
+                  <ul>
+                    <li>Amortiguación Air Max</li>
+                    <li>Material: Malla transpirable</li>
+                    <li>Suela: Goma duradera</li>
+                    <li>Color: Negro/Rojo</li>
+                  </ul>
+                </div>
+                <div class="mb-4">
+                  <label for="talles" class="form-label fw-bold"
+                    >Selecciona tu talle:</label
+                  >
+                  <div class="talles-container mt-2">
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle36"
+                        value="36"
+                      />
+                      <label class="form-check-label talle-option" for="talle36"
+                        >36</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle37"
+                        value="37"
+                      />
+                      <label class="form-check-label talle-option" for="talle37"
+                        >37</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle38"
+                        value="38"
+                      />
+                      <label class="form-check-label talle-option" for="talle38"
+                        >38</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle39"
+                        value="39"
+                      />
+                      <label class="form-check-label talle-option" for="talle39"
+                        >39</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle40"
+                        value="40"
+                      />
+                      <label class="form-check-label talle-option" for="talle40"
+                        >40</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto2"
+      tabindex="-1"
+      aria-labelledby="modalProducto2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Adidas/AdidasJuventus.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Campera Juventus</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto3"
+      tabindex="-1"
+      aria-labelledby="modalProducto3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Puma/BuzoPuma.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Buzo Puma OLD CREAM</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto4"
+      tabindex="-1"
+      aria-labelledby="modalProducto4Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Nike/total90grid.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Zapatillas Nike Air Max PLUS</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Zapatillas diseñadas para máximo confort y rendimiento
+                  deportivo. Tecnología Air de amortiguación.
+                </p>
+
+                <div class="mb-3">
+                  <strong>Características:</strong>
+                  <ul>
+                    <li>Amortiguación Air Max</li>
+                    <li>Material: Malla transpirable</li>
+                    <li>Suela: Goma duradera</li>
+                    <li>Color: Negro/Rojo</li>
+                  </ul>
+                </div>
+                <div class="mb-4">
+                  <label for="talles" class="form-label fw-bold"
+                    >Selecciona tu talle:</label
+                  >
+                  <div class="talles-container mt-2">
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle36"
+                        value="36"
+                      />
+                      <label class="form-check-label talle-option" for="talle36"
+                        >36</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle37"
+                        value="37"
+                      />
+                      <label class="form-check-label talle-option" for="talle37"
+                        >37</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle38"
+                        value="38"
+                      />
+                      <label class="form-check-label talle-option" for="talle38"
+                        >38</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle39"
+                        value="39"
+                      />
+                      <label class="form-check-label talle-option" for="talle39"
+                        >39</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle40"
+                        value="40"
+                      />
+                      <label class="form-check-label talle-option" for="talle40"
+                        >40</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto5"
+      tabindex="-1"
+      aria-labelledby="modalProducto5Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Nike/MusculosaNBAGrid.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Musculosa NBA</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto6"
+      tabindex="-1"
+      aria-labelledby="modalProducto6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Adidas/BolsoAdidas.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Bolso Adidas</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Esta cartera de adidas fusiona una silueta y materiales de
+                  moda con elementos técnicos funcionales. Fabricada en ripstop
+                  metálico brillante y PU perlado, tiene una tira desmontable
+                  para que puedas usarla como morral o cartera. Un bolsillo sin
+                  cierre mantiene organizados los objetos más pequeños.
+                </p>
+
+                <div class="mb-3">
+                  <strong>Características:</strong>
+                  <ul>
+                    <li>Color del artículo: Marron</li>
+                    <li>60 % poliéster (reciclado), 40 % poliuretano</li>
+                    <li>Dimensiones: 16 cm x 31 cm</li>
+                    <li>Con cierre</li>
+                  </ul>
+                </div>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto7"
+      tabindex="-1"
+      aria-labelledby="modalProducto7Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Nike/PantalonNikeMujerGrid.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Pantalon jordan UNISEX</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto8"
+      tabindex="-1"
+      aria-labelledby="modalProducto8Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Jordan/MochilaJordan.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Mochila jordan</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Esta cartera de adidas fusiona una silueta y materiales de
+                  moda con elementos técnicos funcionales. Fabricada en ripstop
+                  metálico brillante y PU perlado, tiene una tira desmontable
+                  para que puedas usarla como morral o cartera. Un bolsillo sin
+                  cierre mantiene organizados los objetos más pequeños.
+                </p>
+
+                <div class="mb-3">
+                  <strong>Características:</strong>
+                  <ul>
+                    <li>Color del artículo: Marron</li>
+                    <li>60 % poliéster (reciclado), 40 % poliuretano</li>
+                    <li>Dimensiones: 16 cm x 31 cm</li>
+                    <li>Con cierre</li>
+                  </ul>
+                </div>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto9"
+      tabindex="-1"
+      aria-labelledby="modalProducto9Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Adidas/PilusoAdidas.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Piluso Adidas</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Cuando hay sol, este piluso de Mercedes - AMG Petronas Formula
+                  One Team de adidas Motorsport es imprescindible. El ala
+                  envolvente ayuda a dar sombra a tus ojos para que puedas
+                  disfrutar de las vistas en los días cálidos. La sutil marca
+                  del equipo y el estampado inspirado en el equipo te permiten
+                  mostrar apoyo a tus pilotos favoritos con un estilo
+                  desenfadado.
+                </p>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto10"
+      tabindex="-1"
+      aria-labelledby="modalProducto10Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Adidas/PantalonAdidas.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Pantalon Adidas SPORT</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto11"
+      tabindex="-1"
+      aria-labelledby="modalProducto11Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Puma/RiñoneraPuma.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Riñonera Puma</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Compacto y moderno. Esta Riñonera es la solución práctica para
+                  salir a correr. Tiene una capacidad de 0,8 litros, que lo
+                  hacen perfecto para llevar lo más básico con ligereza. Póntelo
+                  en la cintura y lleva tus cosas con seguridad mientras corres.
+                </p>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto7"
+      tabindex="-1"
+      aria-labelledby="modalProducto7Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Nike/PantalonNikeMujerGrid.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Pantalon jordan UNISEX</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto13"
+      tabindex="-1"
+      aria-labelledby="modalProducto13Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Adidas/BuzoAdidas.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Buzo Adidas</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto14"
+      tabindex="-1"
+      aria-labelledby="modalProducto14Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Puma/CamperaPumaMujer.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Campera Puma</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto15"
+      tabindex="-1"
+      aria-labelledby="modalProducto15Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Jordan/AllStarTeam.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Musculosa ALLstart</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto16"
+      tabindex="-1"
+      aria-labelledby="modalProducto16Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Nike/ZapatillasNikeSale.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Zapatillas Nike Dunk Low</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Zapatillas diseñadas para máximo confort y rendimiento
+                  deportivo. Tecnología Air de amortiguación.
+                </p>
+
+                <div class="mb-3">
+                  <strong>Características:</strong>
+                  <ul>
+                    <li>Amortiguación Air Max</li>
+                    <li>Material: Malla transpirable</li>
+                    <li>Suela: Goma duradera</li>
+                    <li>Color: Negro/Rojo</li>
+                  </ul>
+                </div>
+                <div class="mb-4">
+                  <label for="talles" class="form-label fw-bold"
+                    >Selecciona tu talle:</label
+                  >
+                  <div class="talles-container mt-2">
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle36"
+                        value="36"
+                      />
+                      <label class="form-check-label talle-option" for="talle36"
+                        >36</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle37"
+                        value="37"
+                      />
+                      <label class="form-check-label talle-option" for="talle37"
+                        >37</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle38"
+                        value="38"
+                      />
+                      <label class="form-check-label talle-option" for="talle38"
+                        >38</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle39"
+                        value="39"
+                      />
+                      <label class="form-check-label talle-option" for="talle39"
+                        >39</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle40"
+                        value="40"
+                      />
+                      <label class="form-check-label talle-option" for="talle40"
+                        >40</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto17"
+      tabindex="-1"
+      aria-labelledby="modalProducto17Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Puma/BuzoPumaSale.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Buzo Puma</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalProducto18"
+      tabindex="-1"
+      aria-labelledby="modalProducto18Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Jordan/AirJordan3Sale.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Zapatillas Nike Air Jordan 3</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Zapatillas diseñadas para máximo confort y rendimiento
+                  deportivo. Tecnología Air de amortiguación.
+                </p>
+
+                <div class="mb-3">
+                  <strong>Características:</strong>
+                  <ul>
+                    <li>Amortiguación Air Max</li>
+                    <li>Material: Malla transpirable</li>
+                    <li>Suela: Goma duradera</li>
+                    <li>Color: Negro/Rojo</li>
+                  </ul>
+                </div>
+                <div class="mb-4">
+                  <label for="talles" class="form-label fw-bold"
+                    >Selecciona tu talle:</label
+                  >
+                  <div class="talles-container mt-2">
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle36"
+                        value="36"
+                      />
+                      <label class="form-check-label talle-option" for="talle36"
+                        >36</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle37"
+                        value="37"
+                      />
+                      <label class="form-check-label talle-option" for="talle37"
+                        >37</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle38"
+                        value="38"
+                      />
+                      <label class="form-check-label talle-option" for="talle38"
+                        >38</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle39"
+                        value="39"
+                      />
+                      <label class="form-check-label talle-option" for="talle39"
+                        >39</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle40"
+                        value="40"
+                      />
+                      <label class="form-check-label talle-option" for="talle40"
+                        >40</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div
+      class="modal fade"
+      id="modalProducto19"
+      tabindex="-1"
+      aria-labelledby="modalProducto19Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Nike/PantalonNikeSale.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Pantalon Nike</h4>
+                <p class="text-muted">Codigo: RR-2344</p>
+                <p>
+                  es un estilo que combina comodidad, funcionalidad y expresión
+                  personal, influenciado por la cultura callejera, el hip hop y
+                  el skater, entre otras. Se caracteriza por prendas holgadas,
+                  tejidos suaves y diseños que priorizan la libertad de
+                  movimiento, como sudaderas con capucha, camisetas gráficas,
+                  pantalones cargo o vaqueros y zapatillas deportivas.
+                </p>
+                <div class="mb-3">
+                  <strong>Características: </strong>
+                  <ul>
+                    <li>Genero: Unisex</li>
+                    <li>Material: Algodon</li>
+                    <li>Color: Rojo</li>
+                    <li>Disciplina:Ropa Urbana</li>
+                    <li>Colores: Neutros</li>
+                    <li>Siluetas: Holgadas pero intencionadas</li>
+                    <li>
+                      Comodidad y funcionalidad: Prendas prácticas para la vida
+                      en la ciudad
+                    </li>
+                  </ul>
+                </div>
+                <div class="talles-container mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleS"
+                      value="S"
+                    />
+                    <label class="form-check-label talle-option" for="talleS"
+                      >S</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleM"
+                      value="M"
+                    />
+                    <label class="form-check-label talle-option" for="talleM"
+                      >M</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleL"
+                      value="L"
+                    />
+                    <label class="form-check-label talle-option" for="talleL"
+                      >L</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXL"
+                      value="XL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXL"
+                      >XL</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="talle"
+                      id="talleXXl"
+                      value="XXL"
+                    />
+                    <label class="form-check-label talle-option" for="talleXXL"
+                      >XXL</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color mt-2">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div
+      class="modal fade"
+      id="modalProducto20"
+      tabindex="-1"
+      aria-labelledby="modalProducto20Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/Adidas/ZapatillasAdidasSale.png"
+                  class="img-fluid rounded"
+                  alt="Zapatillas Nike Air"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4>Zapatillas Adidas Originals</h4>
+                <p class="text-muted">Código: NK-12345</p>
+                <p>
+                  Zapatillas diseñadas para máximo confort y rendimiento
+                  deportivo. Tecnología Air de amortiguación.
+                </p>
+
+                <div class="mb-3">
+                  <strong>Características:</strong>
+                  <ul>
+                    <li>Amortiguación Air Max</li>
+                    <li>Material: Malla transpirable</li>
+                    <li>Suela: Goma duradera</li>
+                    <li>Color: Negro/Rojo</li>
+                  </ul>
+                </div>
+                <div class="mb-4">
+                  <label for="talles" class="form-label fw-bold"
+                    >Selecciona tu talle:</label
+                  >
+                  <div class="talles-container mt-2">
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle36"
+                        value="36"
+                      />
+                      <label class="form-check-label talle-option" for="talle36"
+                        >36</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle37"
+                        value="37"
+                      />
+                      <label class="form-check-label talle-option" for="talle37"
+                        >37</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle38"
+                        value="38"
+                      />
+                      <label class="form-check-label talle-option" for="talle38"
+                        >38</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle39"
+                        value="39"
+                      />
+                      <label class="form-check-label talle-option" for="talle39"
+                        >39</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="talle"
+                        id="talle40"
+                        value="40"
+                      />
+                      <label class="form-check-label talle-option" for="talle40"
+                        >40</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn color">AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row d-flex align-items-center m-4 p-4">
+          <h1 class="text-white">
+            URBANWEAR TIENDA DEPORTIVA: RENDIMIENTO, ESTILO E INNOVACIÓN DESDE
+            2025
+          </h1>
+          <div class="col-md-12">
+            <br />
+            <p class="text-white">
+              El deporte nos mantiene en forma. Te mantiene atento. Nos une. A
+              través del deporte, tenemos el poder de cambiar vidas, inspirándo
+              con historias de atletas, innovando con tecnología y impulsándote
+              a ponerte en movimiento.
+            </p>
+            <br />
+            <p class="text-white">
+              Encontrá aquí ropa deportiva y urbana de alto rendimiento con la
+              última tecnología para ayudarte a superar tus límites. No importa
+              si sos runner, jugador de básquet, futbolista o alguien a quien
+              simplemente le encanta mantenerse activo, nuestra tienda deportiva
+              es tu hogar. Estamos acá para ayudarte a entrenar más duro, correr
+              más rápido y llegar más lejos con productos que se adaptan a tus
+              movimientos y apoyan tus metas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white" />
+      <br />
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="/index.html">
+              <img
+                src="assets/img/Imagen de WhatsApp 2025-11-13 a las 21.02.36_c6234f75.png"
+                alt="logo"
+                class="w-100"
+              />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-3">
+            <h4 class="text-white">Productos</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a class="lineas text-decoration-none link-secondary" href=""
+                  >Zapatillas</a
+                >
+              </li>
+              <li>
+                <a class="lineas text-decoration-none link-secondary" href=""
+                  >Ropa</a
+                >
+              </li>
+              <li>
+                <a class="lineas text-decoration-none link-secondary" href=""
+                  >Acessorios</a
+                >
+              </li>
+              <li>
+                <a class="lineas text-decoration-none link-secondary" href=""
+                  >Destacados</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-3">
+            <h3 class="text-white">Marcas</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  class="lineas text-decoration-none link-secondary"
+                  href="/pages/marcas/adidas.html"
+                  >Adidas</a
+                >
+              </li>
+              <li>
+                <a
+                  class="lineas text-decoration-none link-secondary"
+                  href="/pages/marcas/nike.html"
+                  >Nike</a
+                >
+              </li>
+              <li>
+                <a
+                  class="lineas text-decoration-none link-secondary"
+                  href="/pages/marcas/jordan.html"
+                  >Jordan</a
+                >
+              </li>
+              <li>
+                <a
+                  class="lineas text-decoration-none link-secondary"
+                  href="/pages/marcas/puma.html"
+                  >Puma</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 mt-3">
+            <h3 class="text-white">Siguenos</h3>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-instagram fs-3"></i></li>
+              <li><i class="bi bi-whatsapp fs-3"></i></li>
+              <li><i class="bi bi-facebook fs-3"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white" />
+      <br />
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <nav>
+              <a
+                class="border-end pe-3 me-3 text-white"
+                href="/pages/nosotros.html"
+                >NOSOTROS</a
+              >
+              <a
+                class="border-end pe-3 me-3 text-white"
+                href="/pages/contacto.html"
+                >CONTACTO</a
+              >
+              <a class="text-white" href="/index.html">INICIO</a>
+            </nav>
+          </div>
+          <hr class="text-white mt-2" />
+          <p class="text-center text-white">
+            © 2025 URBANWEAR. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

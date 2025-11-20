@@ -1,5 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --primer-color: black;
+    --segundo-color: white;
+    --tercer-color: #fbc827;
+    /*Tipografia*/
+    --tipografia-principal: "Montserrat", sans-serif;
+}
+.titulos {
+    font-size: var(--tipografia-principal);
+    font-size: 40px;
+}
+
+.logo {
+    width: 175px;
+    margin-left: 30px;
+}
+
+.navbar {
+    background-color: var(--primer-color);
+    font-family: var(--tipografia-principal);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.color {
+    background-color: var(--tercer-color);
+    margin: solid;
+}
+
+.img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.cardPrincipal {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cardOverlay {
+    background: -moz-linear-gradient();
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+.cardPrincipal:hover .cardOverlay {
+    transform: scale(1);
+}
+
+.cardPrincipal:hover img {
+    transform: scale(1.05);
+    transition: 2.0s ease;
+}
+
+.marcas {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .marcas {
+        display: none;
+    }
+}
+
+
+.card {
+    margin: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 4px 8px 10px 0 rgba(22, 22, 26, 0.18);
+}
+
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: black;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-img-hover {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.section-img-hover:hover {
+    transform: scale(1.05);
+}
+
+.cardd {
+    width: 18rem;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;   /* Evita que nada se salga */
+    transition: 0.3s;
+    text-align: center;
+}
+
+.cardd img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardd:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-color: #000;
+}
+
+
+.p-hover:hover {
+    color: #fbc827;
+    transition: color 0.3s ease;
+    transform: scale(1.05);
+}
+.footer {
+    background-color: var(--primer-color);
+}
+.footer img {
+    transition: 0.3s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 8px #fbc827);
+}
+
+
+.lineas {
+    position: relative;
+    color: var(--segundo-color);
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.lineas:hover {
+    color: var(--segundo-color);
+}
+
+.lineas::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--segundo-color);
+    transition: width 0.3s ease;
+}
+
+.lineas:hover::after {
+    width: 100%;
+}
+.form-control:focus, 
+        .form-select:focus, 
+        .form-check-input:focus {
+            border-color: var(--tercer-color);
+            box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+        }
+        .form-control:hover, 
+        .form-select:hover, 
+        .form-check-input:hover {
+            box-shadow: var(--tercer-color);
+        }
+.btn-primary:hover {
+            background-color: var(--tercer-color);
+            border-color: var(--tercer-color);
+            color: #000;
+        }
+           .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.texto-zoom {
+    transition: transform 0.2s ease-in-out;
+}
+
+.texto-zoom:hover {
+    transform: scale(1.2);
+}
+
+.carrito{
+    color: var(--tercer-color);
+}
+
+.error-container {
+    max-width: 600px;
+}
+
+.error-logo {
+    width: 180px;
+    transition: 0.3s ease;
+}
+
+.error-logo:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 10px #fbc827);
+}
+
+
+.error-code {
+    font-size: 8rem;
+    transition: 0.3s ease;
+}
+
+.error-code:hover {
+    color: #fbc827;
+    text-shadow: 0 0 15px #fbc827;
+    transform: scale(1.05);
+}
+
+.error-title, .error-container p {
+    transition: 0.3s ease;
+}
+
+.error-title:hover,
+.error-container p:hover {
+    color: #fbc827;
+    text-shadow: 0 0 12px #fbc827;
+    transform: scale(1.03);
+}
+.contacto{
+    font-family: var(--tipografia-principal);
+}
+.form-contacto{
+    font-family: var(--tipografia-principal);
+}
+

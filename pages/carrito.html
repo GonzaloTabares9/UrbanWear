@@ -157,123 +157,138 @@
       </nav>
     </header>
     <main>
-      <section class="contacto my-5">
-        <h2 class="text-center my-5">Comunicate con nosotros</h2>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4 col-sm-6 p-4 border-end">
-              <div class="text-center">
-                <i class="bi bi-person-plus fs-2 text-center text-primary"></i>
-                <h4 class="text-center">Whatsapp soporte</h4>
-                <p class="text-center">
-                  Enviá tu consulta a nuestro Centro de Atención. Horarios 10:00
-                  a 17:00 hs, de Lunes a Viernes
-                </p>
-                <p class="text-center link-body-emphasis fs-5">
-                  <i class="bi bi-whatsapp text-success me-2"></i>381 627 6191
-                </p>
-              </div>
+    <section class="my-3"> 
+       <div class="container py-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-body p-0">
+                        <div class="d-none d-md-block">
+                            <table class="table table-hover mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Subtotal</th>
+                                        <th scope="col">Comprar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/Nike/NikeAirForceOne(2).png" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;" alt="NikeAirForceOne">
+                                                <span class="ms-3">Nike Air Force One</span>
+                                            </div>
+                                        </th>
+                                        <td class="align-middle">$219.999</td>
+                                        <td class="align-middle">
+                                            <input type="number" class="form-control form-control-sm " value="1" min="1" max="10" style="width: 80px;">
+                                        </td>
+                                        <td class="align-middle">$219.999</td>
+                                        <td class="align-middle">
+                                            <button class="btn color btn-sm"><i class="bi bi-cart-check"></i></button>
+                                            <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/Adidas/PilusoAdidas.png" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;" alt="PilusoAdidas">
+                                                <span class="ms-3">Piluso Adidas</span>
+                                            </div>
+                                        </th>
+                                        <td class="align-middle">$59.999</td>
+                                        <td class="align-middle">
+                                            <input type="number" class="form-control form-control-sm " value="1" min="1" max="10" style="width: 80px;">
+                                        </td>
+                                        <td class="align-middle">$59.999</td>
+                                        <td class="align-middle">
+                                            <button class="btn color btn-sm"><i class="bi bi-cart-check"></i></button>
+                                            <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/Jordan/AllStarTeam.png" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;" alt="AllStarTeam">
+                                                <span class="ms-3">All Star Team</span>
+                                            </div>
+                                        </th>
+                                        <td class="align-middle">$134.999</td>
+                                        <td class="align-middle">
+                                            <input type="number" class="form-control form-control-sm " value="1" min="1" max="10" style="width: 80px;">
+                                        </td>
+                                        <td class="align-middle">$134.999</td>
+                                        <td class="align-middle">
+                                            <button class="btn color btn-sm"><i class="bi bi-cart-check"></i></button>
+                                            <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-md-none">
+                            <div class="p-3 border-bottom">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="../assets/Nike/NikeAirForceOne(2).png" class="img-fluid rounded" alt="NikeAirForceOne">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6 class="mb-1">Nike Air Force One</h6>
+                                        <p class="mb-1 text-muted">$219.999</p>
+                                        <div class="d-flex align-items-center">
+                                            <input type="number" class="form-control form-control-sm me-2 " value="1" min="1" max="10" style="width: 70px;">
+                                            <button class="btn color btn-sm me-1"><i class="bi bi-cart-check"></i></button>
+                                            <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="p-3 border-bottom">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="../assets/Adidas/PilusoAdidas.png" class="img-fluid rounded" alt="PilusoAdidas">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6 class="mb-1">Piluso Adidas</h6>
+                                        <p class="mb-1 text-muted">$59.999</p>
+                                        <div class="d-flex align-items-center">
+                                            <input type="number" class="form-control form-control-sm me-2 " value="1" min="1" max="10" style="width: 70px;">
+                                            <button class="btn color btn-sm me-1"><i class="bi bi-cart-check"></i></button>
+                                            <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="../assets/Jordan/AllStarTeam.png" class="img-fluid rounded" alt="AllStarTeam">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6 class="mb-1">All Star Team</h6>
+                                        <p class="mb-1 text-muted">$134.999</p>
+                                        <div class="d-flex align-items-center">
+                                            <input type="number" class="form-control form-control-sm me-2 " value="1" min="1" max="10" style="width: 70px;">
+                                            <button class="btn color btn-sm me-1"><i class="bi bi-cart-check"></i></button>
+                                            <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-4 col-sm-6 p-4 border-end">
-              <div class="text-center">
-                <i class="bi bi-layout-text-sidebar fs-2 text-center"></i>
-                <h4 class="text-center">Whatsapp redaccion</h4>
-                <p class="text-center">
-                  Enviá tu denuncia incluyendo fotos y/o videos. En caso de
-                  publicarse se protegerá tu identidad
-                </p>
-                <p class="text-center link-body-emphasis fs-5">
-                  <i class="bi bi-whatsapp text-success me-2"></i>381 627 6191
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-sm-6">
-              <div class="text-center">
-                <i
-                  class="bi bi-envelope-open fs-2 text-center text-primary"
-                ></i>
-                <h4 class="text-center">Email contacto</h4>
-                <p class="text-center">
-                  Enviá tus consultas y sugerencias a nuestro centro de atención
-                </p>
-                <p class="text-center link-body-emphasis fs-5">
-                  <i class="bi bi-envelope text-primary me-2"></i
-                  >contacto@UrbanWear.com
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <section class="form-contacto">
-        <div class="container justify-content-center">
-          <div class="row">
-            <div class="col-12 col-md-6 mb-3">
-              <label for="formGroupExampleInput" class="form-label"
-                >Nombre</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput"
-                placeholder="Ej: Gonzalo..."
-                minlength="2"
-                maxlength="30"
-                required
-              />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-              <label for="formGroupExampleInput2" class="form-label"
-                >Email</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="formGroupExampleInput2"
-                placeholder="Ej: leoeze@"
-                minlength="2"
-                maxlength="30"
-                required
-              />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-              <label for="formGroupExampleInput" class="form-label"
-                >Telefono</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput"
-                placeholder="381 ..."
-                minlength="2"
-                maxlength="30"
-                required
-              />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-              <label for="formGroupExampleInput2" class="form-label"
-                >Mensaje</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput2"
-                placeholder="Text"
-                minlength="2"
-                maxlength="30"
-                required
-              />
-            </div>
-          </div>
-          <div class="d-grid mt-4">
-            <button type="submit" class="btn btn-primary btn-lg btn-submit">
-              Enviar Mensaje
-            </button>
-          </div>
-        </div>
+    </div>
       </section>
     </main>
-    <footer class="footer">
+        <footer class="footer">
       <div class="container">
         <div class="row d-flex align-items-center m-4 p-4">
           <h1 class="text-white">
