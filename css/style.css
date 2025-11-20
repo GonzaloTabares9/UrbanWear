@@ -111,27 +111,33 @@ body {
     transform: scale(1.05);
 }
 
-.perfil-img {
+.cardd {
+    width: 18rem;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;   /* Evita que nada se salga */
+    transition: 0.3s;
+    text-align: center;
+}
+
+.cardd img {
     width: 100%;
-    height: 280px;
+    height: auto;
     object-fit: cover;
 }
 
-.card-nosotros {
-    transition: transform 0.3s ease;
-}
-
-.card-nosotros:hover {
-    transform: scale(1.03);
-}
-
-.cardd {
-    transition: 0.3s ease-in-out;
-}
-
 .cardd:hover {
-    transform: scale(1.08) translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-color: #000;
+}
+
+
+.p-hover:hover {
+    color: #fbc827;
+    transition: color 0.3s ease;
+    transform: scale(1.05);
 }
 .footer {
     background-color: var(--primer-color);
