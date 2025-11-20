@@ -111,6 +111,34 @@ body {
     transform: scale(1.05);
 }
 
+.cardd {
+    width: 18rem;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;   /* Evita que nada se salga */
+    transition: 0.3s;
+    text-align: center;
+}
+
+.cardd img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardd:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-color: #000;
+}
+
+
+.p-hover:hover {
+    color: #fbc827;
+    transition: color 0.3s ease;
+    transform: scale(1.05);
+}
 .footer {
     background-color: var(--primer-color);
 }
